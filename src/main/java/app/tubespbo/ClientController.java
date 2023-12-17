@@ -166,14 +166,28 @@ public class ClientController {
         Counseling selectedCounseling = counselingTableView.getSelectionModel().getSelectedItem();
 
         if (selectedCounseling != null) {
-            showpayView(payButton.getScene().getWindow(), selectedCounseling);
-            selectedCounseling.setStatus("Lunas");
-            counselingTableView.refresh();
-            saveCounselingData();
-
-
+            // Jika status "Lunas", tampilkan showpayView
+            if ("Diambil".equals(selectedCounseling.getStatus())) {
+                showpayView(payButton.getScene().getWindow(), selectedCounseling);
+                selectedCounseling.setStatus("Lunas");
+                counselingTableView.refresh();
+                saveCounselingData();
+            } else if("Lunas".equals(selectedCounseling.getStatus())) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Sudah Lunas");
+                alert.setHeaderText(null);
+                alert.setContentText("kamu telah melakukan pembayaran!");
+                alert.showAndWait();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Tunggu Dulu");
+                alert.setHeaderText(null);
+                alert.setContentText("Jadwalmu belum diambil. Tunggu HEARTFriend memilih jadwalmu!");
+                alert.showAndWait();
+            }
         }
     }
+
 
     private void loadCounselingData() {
         try {

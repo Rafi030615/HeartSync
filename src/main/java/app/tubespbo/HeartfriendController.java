@@ -15,7 +15,7 @@ import javafx.stage.Window;
 import java.io.*;
 import java.time.LocalDate;
 
-public class PsikologController {
+public class HeartfriendController {
 
     @FXML
     private TextField temanField;

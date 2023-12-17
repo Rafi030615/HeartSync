@@ -42,19 +42,19 @@ public class Main extends Application {
         loginStage.show();
     }
 
-    public void showPsikologView(Window psikolog) throws Exception {
-        Stage psikologStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("Psikolog.fxml"));
-        psikologStage.setTitle("Menu Psikolog");
-        psikologStage.setScene(new Scene(root));
-        psikologStage.initOwner(psikolog);
-        psikologStage.show();
+    public void showHeartfriendView(Window heartfriend) throws Exception {
+        Stage heartfriendStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("Heartfriend.fxml"));
+        heartfriendStage.setTitle("Menu Heartfriend");
+        heartfriendStage.setScene(new Scene(root));
+        heartfriendStage.initOwner(heartfriend);
+        heartfriendStage.show();
     }
 
     public void showClientView(Window client) throws Exception {
         Stage clientStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("Client.fxml"));
-        clientStage.setTitle("Menu Psikolog");
+        clientStage.setTitle("Menu client");
         clientStage.setScene(new Scene(root));
         clientStage.initOwner(client);
         clientStage.show();

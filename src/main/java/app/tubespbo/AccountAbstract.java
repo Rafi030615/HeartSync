@@ -14,7 +14,7 @@ public abstract class AccountAbstract implements AccountInterface {
     protected PasswordField passwordField;
 
     @FXML
-    protected RadioButton psikologRadioButton;
+    protected RadioButton heartfriendRadioButton;
 
     @FXML
     protected RadioButton clientRadioButton;
@@ -30,7 +30,7 @@ public abstract class AccountAbstract implements AccountInterface {
         toggleGroup = new ToggleGroup();
 
         // Hubungkan RadioButton dengan ToggleGroup
-        psikologRadioButton.setToggleGroup(toggleGroup);
+        heartfriendRadioButton.setToggleGroup(toggleGroup);
         clientRadioButton.setToggleGroup(toggleGroup);
 
         // Pilih default RadioButton (jika perlu)

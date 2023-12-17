@@ -1,1 +1,2 @@
-2023-12-17,Kafe,15000.0,Andhika,anata pranata,Diambil
+2023-12-17,Kafe,1.0,papapa,anata pranata,Lunas
+2023-12-17,lok,15000.0,Rafi,pas,Diambil

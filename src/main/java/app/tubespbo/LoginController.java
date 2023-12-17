@@ -20,18 +20,18 @@ public class LoginController extends AccountAbstract{
     private PasswordField passwordField;
 
     @FXML
-    private RadioButton psikologRadioButton;
+    private RadioButton heartfriendRadioButton;
 
     @FXML
     private void loginButtonClicked(ActionEvent event) {
         String username = usernameField.getText();
         String password = passwordField.getText();
-        String role = psikologRadioButton.isSelected() ? "Psikolog" : "Client";
+        String role = heartfriendRadioButton.isSelected() ? "heartfriend" : "Client";
 
         if (validateLogin(username, password, role)) {
             showSuccessAlert();
-            if ("Psikolog".equals(role)) {
-                showPsikologView(usernameField.getScene().getWindow());
+            if ("heartfriend".equals(role)) {
+                showheartfriendView(usernameField.getScene().getWindow());
             } else {
                 showClientView(usernameField.getScene().getWindow());
             }
@@ -43,8 +43,8 @@ public class LoginController extends AccountAbstract{
     private boolean validateLogin(String username, String password, String role) {
         try {
             BufferedReader bufferedReader;
-            if ("Psikolog".equals(role)) {
-                bufferedReader = new BufferedReader(new FileReader("psikolog.txt"));
+            if ("heartfriend".equals(role)) {
+                bufferedReader = new BufferedReader(new FileReader("heartfriend.txt"));
             } else {
                 bufferedReader = new BufferedReader(new FileReader("client.txt"));
             }
@@ -107,22 +107,22 @@ public class LoginController extends AccountAbstract{
         }
     }
 
-    private void showPsikologView(Window psikolog) {
+    private void showheartfriendView(Window heartfriend) {
         try {
             // Load FXML untuk tampilan registrasi
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Psikolog.fxml"));
-            Stage psikologStage = new Stage();
-            psikologStage.setTitle("Menu Psikolog");
-            psikologStage.setScene(new Scene(loader.load()));
-            psikologStage.initOwner(psikolog);
-            PsikologController psikologController = loader.<PsikologController>getController();
-            psikologController.displayname(usernameField.getText());
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("heartfriend.fxml"));
+            Stage heartfriendStage = new Stage();
+            heartfriendStage.setTitle("Menu heartfriend");
+            heartfriendStage.setScene(new Scene(loader.load()));
+            heartfriendStage.initOwner(heartfriend);
+            HeartfriendController heartfriendController = loader.<HeartfriendController>getController();
+            heartfriendController.displayname(usernameField.getText());
             // Menutup tampilan login sebelum menampilkan tampilan registrasi
             Stage loginStage = (Stage) usernameField.getScene().getWindow();
             loginStage.close();
 
             // Menampilkan tampilan registrasi
-            psikologStage.show();
+            heartfriendStage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }

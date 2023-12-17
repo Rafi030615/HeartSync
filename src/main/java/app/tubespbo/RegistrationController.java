@@ -22,7 +22,7 @@ public class RegistrationController extends AccountAbstract{
     @FXML
     private PasswordField passwordField;
     @FXML
-    private RadioButton psikologRadioButton;
+    private RadioButton heartfriendRadioButton;
     @FXML
     private RadioButton clientRadioButton;
     private ToggleGroup toggleGroup;
@@ -31,7 +31,7 @@ public class RegistrationController extends AccountAbstract{
     private void registerButtonClicked(ActionEvent event) {
         String username = usernameField.getText();
         String password = passwordField.getText();
-        String role = psikologRadioButton.isSelected() ? "Psikolog" : "Client";
+        String role = heartfriendRadioButton.isSelected() ? "heartfriend" : "Client";
 
         User newUser = new User(username, password, role);
         // Menutup tampilan registrasi
@@ -48,8 +48,8 @@ public class RegistrationController extends AccountAbstract{
     private void saveUserToFile(User user) {
         try {
             FileWriter fileWriter;
-            if ("Psikolog".equals(user.getRole())) {
-                fileWriter = new FileWriter("psikolog.txt", true);
+            if ("heartfriend".equals(user.getRole())) {
+                fileWriter = new FileWriter("heartfriend.txt", true);
             } else {
                 fileWriter = new FileWriter("client.txt", true);
             }

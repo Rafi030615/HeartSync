@@ -36,7 +36,7 @@
         </Text>
         <TextField fx:id="usernameField" layoutX="90.0" layoutY="262.0" prefHeight="45.0" prefWidth="293.0" promptText="Username" />
         <PasswordField fx:id="passwordField" layoutX="90.0" layoutY="338.0" prefHeight="45.0" prefWidth="293.0" promptText="Password" />
-        <RadioButton fx:id="psikologRadioButton" layoutX="287.0" layoutY="426.0" text="HEARTFriends" />
+        <RadioButton fx:id="heartfriendRadioButton" layoutX="287.0" layoutY="426.0" text="HEARTFriends" />
         <RadioButton fx:id="clientRadioButton" layoutX="96.0" layoutY="426.0" text="HEARTClients" />
         <Text layoutX="90.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Datang Di ">
             <font>
