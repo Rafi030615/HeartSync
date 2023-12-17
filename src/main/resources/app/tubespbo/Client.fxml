@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tubespbo.ClientController">
+    <children>
+        <AnchorPane layoutX="223.0" prefHeight="55.0" prefWidth="802.0" style="-fx-background-color: #ffd120;">
+            <children>
+                <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTFriend">
+                    <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Button fx:id="signoutButton" layoutX="733.0" layoutY="15.0" mnemonicParsing="false" onAction="#signoutButtonClicked" style="-fx-background-color: #ffffff;" text="Logout" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="720.0" prefWidth="223.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <TextField fx:id="curhatField" layoutX="17.0" layoutY="267.0" prefHeight="35.0" prefWidth="188.0" promptText="Nama Lengkap" />
+                <TextField fx:id="locationField" layoutX="18.0" layoutY="316.0" prefHeight="35.0" prefWidth="188.0" promptText="Lokasi" />
+                <Button fx:id="deleteButton" layoutX="121.0" layoutY="412.0" onAction="#deleteButtonClicked" prefHeight="23.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Hapus">
+                    <font>
+                        <Font name="Arial" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addButton" layoutX="18.0" layoutY="411.0" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Order" />
+                <Circle fill="WHITE" layoutX="112.0" layoutY="101.0" radius="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" />
+                <Label fx:id="usernameLabel" alignment="CENTER" layoutX="17.0" layoutY="169.0" prefHeight="55.0" prefWidth="188.0" text="Username">
+                    <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="updateButton" layoutX="61.0" layoutY="447.0" onAction="#updateButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Ubah" />
+                <DatePicker fx:id="schedulePicker" layoutX="17.0" layoutY="368.0" prefHeight="25.0" prefWidth="188.0" />
+                <Button fx:id="payButton" layoutX="14.0" layoutY="522.0" onAction="#payButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Bayar" />
+            </children>
+        </AnchorPane>
+        <TableView fx:id="counselingTableView" layoutX="259.0" layoutY="90.0" prefHeight="584.0" prefWidth="755.0" style="-fx-border-width: 3;">
+            <columns>
+                <TableColumn fx:id="scheduleColumn" prefWidth="100.0" resizable="false" text="Jadwal" />
+                <TableColumn fx:id="locationColumn" prefWidth="150.0" text="Lokasi" />
+                <TableColumn fx:id="priceColumn" prefWidth="100.0" text="Harga" />
+                <TableColumn fx:id="temanColumn" prefWidth="150.0" text="HeartFriend" />
+                <TableColumn fx:id="curhatColumn" prefWidth="150.0" text="Client Curhat" />
+                <TableColumn fx:id="statusColumn" prefWidth="104.0" text="Status" />
+            </columns>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TableView>
+    </children>
+</AnchorPane>
