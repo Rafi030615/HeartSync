@@ -10,54 +10,50 @@
 
 <AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tubespbo.HomeController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd120" height="196.0" layoutY="529.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
       <QuadCurve controlX="462.0" controlY="-146.0" endX="974.0" fill="#ffd120" layoutX="50.0" layoutY="529.0" startX="-50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-      <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="'HEARTSync.">
+      <Text layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTSync" wrappingWidth="173.13671875">
          <font>
-            <Font name="SansSerif Bold" size="30.0" />
-         </font>
-      </Text>
-      <Text layoutX="254.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lagi Galau?" textAlignment="CENTER" wrappingWidth="514.76171875">
-         <font>
-            <Font name="SansSerif Bold" size="24.0" />
+            <Font name="Tw Cen MT Bold" size="30.0" />
          </font>
       </Text>
       <Text layoutX="355.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tunggu Apalagi Friends" textAlignment="CENTER" wrappingWidth="314.76171875">
          <font>
-            <Font name="SansSerif Bold" size="24.0" />
+            <Font name="Tw Cen MT Bold" size="24.0" />
          </font>
       </Text>
       <Text layoutX="314.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yuk Curhatin Aja di HEARTSync" textAlignment="CENTER" wrappingWidth="393.76171875">
          <font>
-            <Font name="SansSerif Bold" size="24.0" />
+            <Font name="Tw Cen MT Bold" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="RegistrationButton" layoutX="430.0" layoutY="610.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="44.0" prefWidth="164.0" style="-fx-background-radius: 25; -fx-background-color: #ffffff;" text="Daftar Sekarang">
+      <Button fx:id="RegistrationButton" layoutX="429.0" layoutY="605.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="44.0" prefWidth="164.0" style="-fx-background-radius: 25; -fx-background-color: #ffffff;" text="Daftar Sekarang">
          <font>
-            <Font name="SansSerif Regular" size="12.0" />
+            <Font name="Tw Cen MT" size="14.0" />
          </font>
       </Button>
-      <Line endX="100.0" endY="-58.0" layoutX="412.0" layoutY="166.0" startX="100.0" startY="243.0" />
+      <Line endX="100.0" endY="-3.0" layoutX="412.0" layoutY="166.0" startX="100.0" startY="243.0" />
       <Text layoutX="80.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTFriends" wrappingWidth="173.13671875">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="Tw Cen MT Bold Italic" size="24.0" />
          </font>
       </Text>
       <Text layoutX="769.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTClients" textAlignment="RIGHT" wrappingWidth="173.13671875">
          <font>
-            <Font name="SansSerif Bold Italic" size="24.0" />
+            <Font name="Tw Cen MT Bold Italic" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="100.0" layoutY="278.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamu bisa jadi teman curhat yang asik? Yuk daftarkan dirimu jadi salah satu HEARTFriends. Disini tugasmu mencari HEARTClients yang lagi butuh cerita." textAlignment="JUSTIFY" wrappingWidth="329.13671875">
+      <Text layoutX="100.0" layoutY="278.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamu bisa jadi teman curhat yang asik? Yuk daftarkan dirimu jadi salah satu HEARTFriends. Disini tugasmu mencari HEARTClients yang lagi butuh cerita." wrappingWidth="329.13671875">
          <font>
-            <Font size="18.0" />
+            <Font name="Tw Cen MT" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="594.0" layoutY="277.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lagi galau? Lagi kesel? Lagi sedih? Butuh temen curhat? Yuk curhatin aja semua masalahmu dengan HEARTFriends yang siap mendengar ceritamu." textAlignment="JUSTIFY" wrappingWidth="329.13671875">
+      <Text layoutX="594.0" layoutY="277.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lagi galau? Lagi kesel? Lagi sedih? Butuh temen curhat? Yuk curhatin aja semua masalahmu dengan HEARTFriends yang siap mendengar ceritamu." textAlignment="RIGHT" wrappingWidth="329.13671875">
          <font>
-            <Font size="18.0" />
+            <Font name="Tw Cen MT" size="24.0" />
          </font>
       </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ea3b2" height="33.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
    </children>
 </AnchorPane>

@@ -9,9 +9,10 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tubespbo.PaymentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="691.0" style="-fx-background-color: #ffd120;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tubespbo.PaymentController">
     <children>
         <GridPane layoutX="45.0" layoutY="107.0" prefHeight="204.0" prefWidth="335.0" vgap="12.0">
             <columnConstraints>
@@ -26,24 +27,65 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTClient" wrappingWidth="97.26171875" />
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTFriend" wrappingWidth="97.26171875" GridPane.rowIndex="1" />
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jadwal" wrappingWidth="97.26171875" GridPane.rowIndex="2" />
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lokasi" wrappingWidth="97.26171875" GridPane.rowIndex="3" />
-                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Harga" wrappingWidth="97.26171875" GridPane.rowIndex="4" />
-                <Label fx:id="clientNameLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="client" textAlignment="RIGHT" GridPane.columnIndex="1" />
-                <Label fx:id="psikologNameLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="friend" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <Label fx:id="jadwalLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="jadwal" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                <Label fx:id="lokasiLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Lokasi" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <Label fx:id="hargaLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Harga" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTClient" wrappingWidth="97.26171875">
+               <font>
+                  <Font name="Tw Cen MT Italic" size="18.0" />
+               </font></Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTFriend" wrappingWidth="97.26171875" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Tw Cen MT Italic" size="18.0" />
+               </font></Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jadwal" wrappingWidth="97.26171875" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Tw Cen MT Italic" size="18.0" />
+               </font></Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lokasi" wrappingWidth="97.26171875" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Tw Cen MT Italic" size="18.0" />
+               </font></Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Harga" wrappingWidth="97.26171875" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Tw Cen MT Italic" size="18.0" />
+               </font></Text>
+                <Label fx:id="clientNameLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="client" textAlignment="RIGHT" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font></Label>
+                <Label fx:id="psikologNameLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="friend" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font></Label>
+                <Label fx:id="jadwalLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="jadwal" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font></Label>
+                <Label fx:id="lokasiLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Lokasi" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font></Label>
+                <Label fx:id="hargaLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="199.0" text="Harga" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font></Label>
             </children>
         </GridPane>
         <Line endX="-100.0" endY="245.0" layoutX="526.0" layoutY="70.0" startX="-100.0" startY="34.0" />
-        <ImageView fitHeight="204.0" fitWidth="187.0" layoutX="460.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="204.0" fitWidth="187.0" layoutX="460.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@image/qris.png" />
             </image>
         </ImageView>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd120" height="48.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="691.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="691.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ea3b2" height="16.0" layoutY="48.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="691.0" />
+      <Text layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTPay">
+         <font>
+            <Font name="Tw Cen MT Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="140.0" layoutX="501.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/qris_font.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

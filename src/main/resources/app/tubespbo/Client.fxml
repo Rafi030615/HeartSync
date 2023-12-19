@@ -7,8 +7,12 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -16,36 +20,61 @@
     <children>
         <AnchorPane layoutX="223.0" prefHeight="55.0" prefWidth="802.0" style="-fx-background-color: #ffd120;">
             <children>
-                <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTFriend">
+                <Text fill="WHITE" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTClient">
                     <font>
-                        <Font name="SansSerif Bold" size="24.0" />
+                        <Font name="Tw Cen MT Bold" size="24.0" />
                     </font>
                 </Text>
-                <Button fx:id="signoutButton" layoutX="733.0" layoutY="15.0" mnemonicParsing="false" onAction="#signoutButtonClicked" style="-fx-background-color: #ffffff;" text="Logout" />
+                <Button fx:id="signoutButton" layoutX="732.0" layoutY="14.0" mnemonicParsing="false" onAction="#signoutButtonClicked" style="-fx-background-color: #ffffff; -fx-background-radius: 15;" text="Logout">
+               <font>
+                  <Font name="Tw Cen MT" size="14.0" />
+               </font></Button>
             </children>
         </AnchorPane>
-        <AnchorPane prefHeight="720.0" prefWidth="223.0" style="-fx-background-color: #ffffff;">
+        <AnchorPane prefHeight="720.0" prefWidth="223.0" style="-fx-background-color: #1ea3b2;">
             <children>
                 <TextField fx:id="curhatField" layoutX="17.0" layoutY="267.0" prefHeight="35.0" prefWidth="188.0" promptText="Nama Lengkap" />
                 <TextField fx:id="locationField" layoutX="18.0" layoutY="316.0" prefHeight="35.0" prefWidth="188.0" promptText="Lokasi" />
                 <Button fx:id="deleteButton" layoutX="121.0" layoutY="412.0" onAction="#deleteButtonClicked" prefHeight="23.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Hapus">
                     <font>
-                        <Font name="Arial" size="12.0" />
+                        <Font name="Tw Cen MT" size="14.0" />
                     </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </Button>
-                <Button fx:id="addButton" layoutX="18.0" layoutY="411.0" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Order" />
+                <Button fx:id="addButton" layoutX="18.0" layoutY="411.0" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Order">
+               <font>
+                  <Font name="Tw Cen MT" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
                 <Circle fill="WHITE" layoutX="112.0" layoutY="101.0" radius="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" />
                 <Label fx:id="usernameLabel" alignment="CENTER" layoutX="17.0" layoutY="169.0" prefHeight="55.0" prefWidth="188.0" text="Username">
                     <font>
-                        <Font name="SansSerif Regular" size="18.0" />
+                        <Font name="Tw Cen MT Condensed" size="24.0" />
                     </font>
                 </Label>
-                <Button fx:id="updateButton" layoutX="61.0" layoutY="447.0" onAction="#updateButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Ubah" />
+                <Button fx:id="updateButton" layoutX="121.0" layoutY="449.0" onAction="#updateButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Ubah">
+               <font>
+                  <Font name="Tw Cen MT" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
                 <DatePicker fx:id="schedulePicker" layoutX="17.0" layoutY="368.0" prefHeight="25.0" prefWidth="188.0" />
-                <Button fx:id="payButton" layoutX="14.0" layoutY="522.0" onAction="#payButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Bayar" />
+                <Button fx:id="payButton" layoutX="18.0" layoutY="449.0" onAction="#payButtonClicked" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 10; -fx-background-color: #ffd120;" text="Bayar">
+               <font>
+                  <Font name="Tw Cen MT" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Line endX="78.0" layoutX="122.0" layoutY="224.0" startX="-100.0" />
             </children>
         </AnchorPane>
-        <TableView fx:id="counselingTableView" layoutX="259.0" layoutY="90.0" prefHeight="584.0" prefWidth="755.0" style="-fx-border-width: 3;">
+        <TableView fx:id="counselingTableView" layoutX="247.0" layoutY="74.0" prefHeight="240.0" prefWidth="755.0" style="-fx-border-width: 3; -fx-border-color: #ffd120;">
             <columns>
                 <TableColumn fx:id="scheduleColumn" prefWidth="100.0" resizable="false" text="Jadwal" />
                 <TableColumn fx:id="locationColumn" prefWidth="150.0" text="Lokasi" />
@@ -58,5 +87,44 @@
                 <Cursor fx:constant="DEFAULT" />
             </cursor>
         </TableView>
+      <AnchorPane layoutX="247.0" layoutY="345.0" prefHeight="356.0" prefWidth="755.0" style="-fx-background-color: #ffd120; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="275.0" fitWidth="379.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/frustasi.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="378.0" layoutY="35.0" prefHeight="55.0" prefWidth="322.0" style="-fx-background-color: #000000; -fx-background-radius: 15;">
+               <children>
+                  <Text fill="WHITE" layoutX="11.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamu kenapa friend? Stress banget ya" textAlignment="CENTER" wrappingWidth="301.0">
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <QuadCurve controlX="-89.0" controlY="48.0" endX="-51.0" endY="-2.0" layoutX="768.0" layoutY="37.0" startX="-89.0" startY="-2.0" stroke="BLACK" strokeType="INSIDE" />
+            <AnchorPane layoutX="375.0" layoutY="106.0" prefHeight="55.0" prefWidth="223.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+               <children>
+                  <QuadCurve controlX="-39.0" controlY="48.0" endX="-39.0" endY="-7.0" fill="WHITE" layoutX="71.0" layoutY="7.0" startX="-89.0" startY="-7.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aku lagi galau berat nih" wrappingWidth="194.15985107421875">
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="375.0" layoutY="178.0" prefHeight="75.0" prefWidth="322.0" style="-fx-background-color: #000000; -fx-background-radius: 15;">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daripada pusing sendiri yu order jadwal curhat aja bareng HEARTFriend" textAlignment="JUSTIFY" wrappingWidth="294.0">
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <QuadCurve controlX="-89.0" controlY="48.0" endX="-51.0" endY="-2.0" layoutX="770.0" layoutY="180.0" startX="-89.0" startY="-2.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
     </children>
 </AnchorPane>

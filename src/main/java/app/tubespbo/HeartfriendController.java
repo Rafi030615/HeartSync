@@ -21,16 +21,10 @@ public class HeartfriendController {
     private TextField temanField;
 
     @FXML
-    private TextField locationField;
-
-    @FXML
     private TextField priceField;
 
     @FXML
     Label usernameLabel;
-
-    @FXML
-    private Button addButton;
 
     @FXML
     private Button updateButton;
@@ -40,9 +34,6 @@ public class HeartfriendController {
 
     @FXML
     private Button deleteButton;
-
-    @FXML
-    private DatePicker schedulePicker;
 
 
     @FXML
@@ -104,8 +95,7 @@ public class HeartfriendController {
             selectedCounseling.setTeman(temanField.getText());
             selectedCounseling.setStatus("Diambil");
             counselingTableView.refresh();
-            saveCounselingData();  // Menyimpan data ke file
-            clearFields();
+            saveCounselingData();
         }
     }
 
@@ -114,9 +104,10 @@ public class HeartfriendController {
         Counseling selectedCounseling = counselingTableView.getSelectionModel().getSelectedItem();
 
         if (selectedCounseling != null) {
-            counselingList.remove(selectedCounseling);
-            saveCounselingData();  // Menyimpan data ke file
-            clearFields();
+            selectedCounseling.setStatus("Tunggu teman curhat");
+            selectedCounseling.setStatus("Tunggu");
+            counselingTableView.refresh();
+            saveCounselingData();
         }
     }
 
@@ -190,9 +181,4 @@ public class HeartfriendController {
 
     }
 
-
-    private void clearFields() {
-        locationField.clear();
-        priceField.clear();
-    }
 }

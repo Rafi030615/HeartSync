@@ -89,7 +89,7 @@ public class ClientController {
 
         Counseling newCounseling = new Counseling(schedule, location, price, teman, curhat, status);
         counselingList.add(newCounseling);
-        saveCounselingData();  // Menyimpan data ke file
+        saveCounselingData();
         clearFields();
     }
 

@@ -4,6 +4,8 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
@@ -11,25 +13,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.tubespbo.RegistrationController">
     <children>
-        <AnchorPane layoutX="524.0" prefHeight="720.0" prefWidth="500.0" style="-fx-background-color: #ffd120;">
-            <children>
-                <Text layoutX="83.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's Synchronize Your Heart" wrappingWidth="304.8046875">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Text>
-                <Text layoutX="84.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTSync">
-                    <font>
-                        <Font name="SansSerif Bold" size="48.0" />
-                    </font>
-                </Text>
-                <Text layoutX="195.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logo" wrappingWidth="58.2763671875">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Text>
-            </children></AnchorPane>
-        <Text layoutX="93.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun? Yuk">
+        <Text layoutX="90.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun? Yuk">
             <font>
                 <Font size="15.0" />
             </font>
@@ -38,19 +22,9 @@
         <PasswordField fx:id="passwordField" layoutX="90.0" layoutY="338.0" prefHeight="45.0" prefWidth="293.0" promptText="Password" />
         <RadioButton fx:id="heartfriendRadioButton" layoutX="287.0" layoutY="426.0" text="HEARTFriends" />
         <RadioButton fx:id="clientRadioButton" layoutX="96.0" layoutY="426.0" text="HEARTClients" />
-        <Text layoutX="90.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Datang Di ">
-            <font>
-                <Font name="SansSerif Regular" size="24.0" />
-            </font>
-        </Text>
-        <Text layoutX="91.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTSync">
-            <font>
-                <Font name="SansSerif Bold" size="48.0" />
-            </font>
-        </Text>
         <Line endX="189.0" layoutX="193.0" layoutY="217.0" startX="-102.0" />
         <Button layoutX="204.0" layoutY="457.0" onAction="#registerButtonClicked" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: #ffd120; -fx-background-radius: 15;" text="Daftar" />
-        <Button layoutX="255.0" layoutY="168.0" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 25; -fx-background-color: #ffd120;" text="Login" />
+        <Button layoutX="255.0" layoutY="178.0" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="66.0" style="-fx-background-radius: 25; -fx-background-color: #ffd120;" text="Login" />
         <Line endX="-6.0" layoutX="195.0" layoutY="474.0" startX="-102.0" />
         <Line endX="-6.0" layoutX="389.0" layoutY="473.0" startX="-102.0" />
         <Text layoutX="90.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
@@ -63,10 +37,39 @@
                 <Font size="14.0" />
             </font>
         </Text>
-        <Text layoutX="189.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar sebagai :">
+        <Text layoutX="190.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar sebagai :">
             <font>
                 <Font size="14.0" />
             </font>
         </Text>
+      <AnchorPane layoutX="524.0" layoutY="-14.0" prefHeight="720.0" prefWidth="500.0" style="-fx-background-color: #ffd120;">
+         <children>
+            <Text layoutX="120.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's Synchronize Your Heart" wrappingWidth="259.4794921875">
+               <font>
+                  <Font name="Tw Cen MT" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="120.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTSync">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="54.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="287.0" fitWidth="415.0" layoutX="62.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Coffee.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="92.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Datang Di ">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="90.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEARTSync">
+         <font>
+            <Font name="Tw Cen MT Bold" size="54.0" />
+         </font>
+      </Text>
     </children>
 </AnchorPane>

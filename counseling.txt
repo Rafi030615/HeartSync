@@ -1,2 +1,5 @@
-2023-12-17,Kafe,1.0,papapa,anata pranata,Lunas
-2023-12-17,lok,15000.0,Rafi,pas,Diambil
+2023-12-13,Kafe,13000.0,Rafi,Andhika,Lunas
+2023-12-18,TULT,15000.0,Rafi,Lisda,Lunas
+2023-12-20,Kafe,0.0,tunggu teman curhat,Rafi Andhika,Tunggu
+2023-12-19,Bandung,1000000.0,Dhika,Rafi Andhika,Lunas
+2023-12-20,GKU,15000.0,Rafi,Geva,Lunas
